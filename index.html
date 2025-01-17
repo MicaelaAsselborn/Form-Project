@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <header>
+        <h1 id="title">Survey Form Project</h1>
+        <p id="description">This is a simple survey project.</p>
+        <hr>
+    </header>
+    <form id="survey-form" method="post" action="URL">
+        <section id="personal-data">
+            <label class="p" id="name-label" for="name">Name:</label><input class="data" type="text" required id="name" placeholder="Enter your name here">
+            <label class="p" id="email-label" for="email">Email:</label><input class="data" type="email" required id="email" placeholder="Enter your email here">
+            <label class="p" id="number-label" for="number">Age:</label><input class="data" min="5" max="120" type="number" id="number" placeholder="Enter your age here">
+        </section>
+        <section id="current-situation">
+            <label class="p">Which of the next option describes your current situation better?</label>
+            <select id="dropdown" class="select">
+                <option disabled selected value>Select an option</option>
+                <option value="studying">Studying</option>
+                <option value="working-part-time">Working part-time</option>
+                <option value="working-full-time">Working full-time</option>
+                <option value="its-difficult">It's difficult</option>
+            </select>
+        </section>
+        <section id="recommendation">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input value="yes-recommend" type="radio" name="recommendation" checked id="yes-recommend"><label for="yes-recommend">Yes, definetely</label><br>
+            <input value="no-recommend" type="radio" name="recommendation" id="no-recommend"><label for="no-recommend">No, too difficult</label><br>
+            <input value="maybe-recommend" type="radio" name="recommendation" id="maybe"><label for="maybe">Maybe</label>
+        </section>
+        <section id="interests">
+            <p>What are you interested in learning?</p>
+            <label for="phyton"><input value="phyton" id="phyton" type="checkbox" checked>Phyton</label><br>
+            <label for="html"><input value="html" id="html" type="checkbox">HTML</label><br>
+            <label for="css"><input value="css" id="css" type="checkbox">CSS</label><br>
+            <label for="javascript"><input value="javascript" id="javascript" type="checkbox">JavaScript</label><br>
+            <label for="ai"><input value="ai" id="ai" type="checkbox">Artificial Inteligence</label><br>
+            <label for="data-bases"><input value="data-bases" id="data-bases" type="checkbox">Data bases</label><br>
+            <label for="node"><input value="node" id="node" type="checkbox">Node</label><br>
+        </section>
+        <section>
+            <p>Anything else you would like to tell us?</p>
+            <textarea class="textarea" rows="5" placeholder="Write your comment here..."></textarea><br>
+            <input type="submit" id="submit" class="submit">
+        </section>
+    </form>
+    </main>
+</body>
+</html>
